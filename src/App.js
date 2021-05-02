@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { connect } from "react-redux";
+import { loading } from "./redux/action/loading";
+import "./App.less";
+import Loader from "./LOADER/Loader";
+import { Fragment } from "react";
+import Routes from "./Routes";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Loader />
+      <Routes />
+    </Fragment>
   );
 }
 
-export default App;
+const mapToStateProps = (state) => ({
+  LOADING: state.Loading.Loading,
+});
+
+export default connect(mapToStateProps, { loading })(App);
