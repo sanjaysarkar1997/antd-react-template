@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import "./Login.less"
 
 export const Login = (props) => {
   return (

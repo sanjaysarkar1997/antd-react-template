@@ -1,16 +1,17 @@
+import React, { Suspense } from "react";
 import { connect } from "react-redux";
 import { loading } from "./redux/action/loading";
-import "./App.less";
 import Loader from "./LOADER/Loader";
-import { Fragment } from "react";
-import Routes from "./Routes";
+import "./App.less";
+
+const Pages = React.lazy(() => import("./Routes"));
 
 function App(props) {
   return (
-    <Fragment>
+    <Suspense fallback={<div>Put a Global Loader</div>}>
       <Loader />
-      <Routes />
-    </Fragment>
+      <Pages />
+    </Suspense>
   );
 }
 

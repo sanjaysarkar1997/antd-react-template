@@ -1,7 +1,8 @@
 import axios from "axios";
+import apis from "./urls";
 
 const http = axios.create({
-  baseURL: process.env.URL,
+  baseURL: apis.baseUrl,
   //   timeout: 1000,
   //   headers: { "X-Custom-Header": "foobar" },
 });
