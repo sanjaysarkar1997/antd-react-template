@@ -1,5 +1,4 @@
 const Login = () => {
-  console.log(localStorage.getItem("id"));
   if (localStorage.getItem("id")) {
     return true;
   } else {

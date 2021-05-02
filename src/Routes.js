@@ -5,8 +5,8 @@ import { Login } from "./Pages/Login/Login";
 import { PageNotFound } from "./Pages/PageNotFound/PageNotFound";
 import { Restricted } from "./Pages/Restricted";
 import { SignUp } from "./Pages/SignUp/SignUp";
-import PrivateRoute from "./routes/PrivateRoute";
-import PublicRoute from "./routes/PublicRoute";
+import PublicRoute from "./Routes/PublicRoute";
+import PrivateRoute from "./Routes/PrivateRoute"
 
 export default function Routes() {
   return (

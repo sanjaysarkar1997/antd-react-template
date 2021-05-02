@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { connect } from "react-redux";
-import { loading } from "./redux/action/loading";
+import { loading } from "./Redux/action/loading";
 import Loader from "./LOADER/Loader";
 import "./App.less";
 
