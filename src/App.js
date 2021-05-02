@@ -1,10 +1,10 @@
-import React, { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import { connect } from "react-redux";
 import { loading } from "./redux/action/loading";
 import Loader from "./LOADER/Loader";
 import "./App.less";
 
-const Pages = React.lazy(() => import("./Routes"));
+const Pages = lazy(() => import("./Routes"));
 
 function App(props) {
   return (
