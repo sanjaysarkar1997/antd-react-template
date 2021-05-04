@@ -1,7 +1,8 @@
 import { applyMiddleware, createStore } from "redux";
 import thunk from "redux-thunk";
 import logger from "redux-logger";
-import Root from "./redux/reducers/Root";
+import Root from "./Redux/reducers/Root";
+
 
 // Initial State for Store
 const initialState = {};
