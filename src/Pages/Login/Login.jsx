@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button, Checkbox, Divider } from "antd";
+import { Form, Input, Button, Divider } from "antd";
 import { connect } from "react-redux";
 import "./Login.less";
 import { Link } from "react-router-dom";
