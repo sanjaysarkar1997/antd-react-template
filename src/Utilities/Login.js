@@ -1,5 +1,5 @@
 const Login = () => {
-  if (localStorage.getItem("id")) {
+  if (localStorage.getItem("logged")) {
     return true;
   } else {
     return false;
