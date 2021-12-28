@@ -20,7 +20,7 @@ const httpServicesPost = async (url, data = {}, header = {}) => {
     store.dispatch(loading(false));
   }
 };
-const httpServicesGet = async (url) => {
+const httpServicesGet = async (url, header = {}) => {
   try {
     store.dispatch(loading(true));
     let returnData = await http.get(url);
